@@ -12,7 +12,7 @@ def start_talker():
 	while not rospy.is_shutdown():
 		if(i <= 100) :
 			hello_str = str(i)
-			pub = rospy.Publisher('my_chat_topic', String, queue_size=10)
+			pub = rospy.Publisher('lezhit_hodya', String, queue_size=10)
 			rospy.loginfo(hello_str)
 			msg.data = hello_str
 			pub.publish(msg)
